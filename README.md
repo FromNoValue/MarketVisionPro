@@ -44,7 +44,7 @@ Getting MarketVisionPro up and running is easy:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/MarketVisionPro.git
+git clone https://github.com/fromnovalue/MarketVisionPro.git
 
 # Navigate to the project directory
 cd MarketVisionPro

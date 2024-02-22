@@ -20,3 +20,6 @@
     "prettier": "^2.2.1"
   }
 }
+"scripts": {
+  "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx,json,css}'"
+}

@@ -1,0 +1,2 @@
+npm install --save-dev prettier
+yarn add --dev prettier

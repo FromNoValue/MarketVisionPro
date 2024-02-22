@@ -1,0 +1,32 @@
+{
+    "name": "Advanced Trading Tool Development",
+    "image": "mcr.microsoft.com/vscode/devcontainers/python:3.9",
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash",
+        "python.pythonPath": "/usr/local/bin/python",
+        "python.linting.enabled": true,
+        "python.linting.pylintEnabled": true,
+        "python.formatting.autopep8Enabled": true,
+        "editor.formatOnSave": true
+    },
+    "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter",
+        "ms-python.vscode-pylance",
+        "ms-azuretools.vscode-docker",
+        "github.vscode-pull-request-github",
+        "eamodio.gitlens",
+        "visualstudioexptteam.vscodeintellicode"
+    ],
+    "forwardPorts": [8888, 5000],
+    "postCreateCommand": "pip install -r requirements.txt",
+    "mounts": ["source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached"],
+    "remoteUser": "vscode",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "python.analysis.typeCheckingMode": "basic"
+            }
+        }
+    }
+}
